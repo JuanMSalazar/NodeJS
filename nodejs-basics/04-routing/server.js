@@ -1,3 +1,4 @@
 const http = require('http');
+const app = require("./app")
 
-http.createServer().listen(8000);
+http.createServer(app.handleRequest).listen(8000);
