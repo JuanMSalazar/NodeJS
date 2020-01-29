@@ -1,6 +1,6 @@
 module.exports = {
   myFunction: function() {
-    console.log("Exported!");
+    console.log('Exported!');
   },
-  myVariable: "Exported Variable"
+  myVariable: 'Exported Variable'
 };

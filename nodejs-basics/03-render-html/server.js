@@ -1,12 +1,12 @@
-const http = require("http");
-const fs = require("fs");
+const http = require('http');
+const fs = require('fs');
 
 const onRequest = (req, res) => {
-  res.writeHead(200, { "Content-Type": "text/html" });
-  fs.readFile("./index.html", null, (err, data) => {
+  res.writeHead(200, { 'Content-Type': 'text/html' });
+  fs.readFile('./index.html', null, (err, data) => {
     if (err) {
       res.writeHead(404);
-      res.write("File not found!");
+      res.write('File not found!');
     } else {
       res.write(data);
     }
